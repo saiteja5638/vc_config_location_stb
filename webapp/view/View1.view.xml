@@ -1,0 +1,97 @@
+<mvc:View xmlns:unified="sap.ui.unified" xmlns:tnt="sap.tnt" xmlns:vk="sap.ui.vk" xmlns:uxap="sap.uxap" controllerName="locationstb.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:u="sap.ui.unified"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}"  showHeader="false" >
+        <uxap:ObjectPageLayout id="_IDGenObjectPageLayout1" >
+        <uxap:headerTitle>
+        <uxap:ObjectPageDynamicHeaderTitle id="_IDGenObjectPageDynamicHeaderTitle1" >
+        <uxap:expandedHeading>
+        <HBox id="_IDGenHBox1" >
+        <Title id="_IDGenTitle1"  text="Location_stb" ></Title>
+        </HBox>
+        </uxap:expandedHeading>
+        </uxap:ObjectPageDynamicHeaderTitle>
+        </uxap:headerTitle>
+       <uxap:headerContent>
+       </uxap:headerContent>
+       <uxap:ObjectPageSection id="_IDGenObjectPageSection1" >
+       <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection2" >
+        <Toolbar id="_IDGenToolbar1"   >
+        <ToolbarSpacer id="_IDGenToolbarSpacer1" ></ToolbarSpacer>
+        <unified:FileUploader id="_IDGenFileUploader1"   change="onFileSelect" ></unified:FileUploader>
+        <Button id="_IDGenButton1"  press="hide_columns"  icon="sap-icon://action-settings" ></Button>
+        </Toolbar>
+       </uxap:ObjectPageSubSection>
+       <uxap:subSections>
+       <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection1" >
+       <Table id="table"  items="{/items}"  alternateRowColors="true" >
+       <columns>
+       <Column id="_IDGenColumn1" >
+       <Text id="_IDGenText1"   text="LOCATION_ID" ></Text>
+       </Column>
+       <Column id="_IDGenColumn2" >
+       <Text id="_IDGenText2" text="LOCATION_DESC" ></Text>
+       </Column>
+       <Column id="_IDGenColumn3" >
+       <Text id="_IDGenText3" text="LOCATION_TYPE" ></Text>
+       </Column>
+      <Column id="_IDGenColumn4" >
+       <Text id="_IDGenText4" text="RESERVE_FIELD1" ></Text>
+       </Column>
+             <Column id="_IDGenColumn5" >
+       <Text id="_IDGenText5" text="RESERVE_FIELD2" ></Text>
+       </Column>
+             <Column id="_IDGenColumn6" >
+       <Text id="_IDGenText6" text="RESERVE_FIELD3" ></Text>
+       </Column>
+             <Column id="_IDGenColumn7" >
+       <Text id="_IDGenText7" text="RESERVE_FIELD4" ></Text>
+       </Column>
+             <Column id="_IDGenColumn8" >
+       <Text id="_IDGenText8" text="RESERVE_FIELD5" ></Text>
+       </Column>
+       <Column id="_IDGenColumn9" >
+       <Text id="_IDGenText9" text="CHANGED_DATE" ></Text>
+       </Column>
+       <Column id="_IDGenColumn10" >
+       <Text id="_IDGenText10" text="CHANGED_TIME" ></Text>
+       </Column>
+       <Column id="_IDGenColumn11" >
+       <Text id="_IDGenText11" text="CHANGED_BY" ></Text>
+       </Column>
+       <Column id="_IDGenColumn12" >
+       <Text id="_IDGenText12" text="CREATED_DATE" ></Text>
+       </Column>
+       <Column id="_IDGenColumn13" >
+       <Text id="_IDGenText13" text="CREATED_TIME" ></Text>
+       </Column>
+       <Column id="_IDGenColumn14" >
+       <Text id="_IDGenText14" text="CREATED_BY" ></Text>
+       </Column>       
+       </columns>
+       <items>
+       <ColumnListItem id="_IDGenColumnListItem1" >
+       <Text id="_IDGenText111"  text="{LOCATION_ID}" ></Text>
+       <Text id="_IDGenText112"  text="{LOCATION_DESC}" ></Text>
+       <Text id="_IDGenText113"  text="{LOCATION_TYPE}" ></Text>
+       <Text id="_IDGenText114"  text="{RESERVE_FIELD1}" ></Text>
+       <Text id="_IDGenText15"  text="{RESERVE_FIELD2}" ></Text>
+       <Text id="_IDGenText16"  text="{RESERVE_FIELD3}" ></Text>
+       <Text id="_IDGenText17"  text="{RESERVE_FIELD4}" ></Text>
+       <Text id="_IDGenText18"  text="{RESERVE_FIELD5}" ></Text>
+       <Text id="_IDGenText19"  text="{CHANGED_DATE}" ></Text>
+       <Text id="_IDGenText20"  text="{CHANGED_TIME}" ></Text>
+       <Text id="_IDGenText21"  text="{CHANGED_BY}" ></Text>
+       <Text id="_IDGenText22"  text="{CREATED_DATE}" ></Text>
+       <Text id="_IDGenText23"  text="{CREATED_TIME}" ></Text>
+       <Text id="_IDGenText24"  text="{CREATED_BY}" ></Text>
+       </ColumnListItem>
+       </items>
+       </Table>
+       </uxap:ObjectPageSubSection>
+       </uxap:subSections>
+       </uxap:ObjectPageSection>
+        
+        </uxap:ObjectPageLayout>
+    </Page>
+</mvc:View>

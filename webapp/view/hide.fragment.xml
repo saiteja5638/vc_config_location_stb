@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns:table="sap.ui.table" xmlns:tnt="sap.tnt"   xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"  >
+<Dialog  id="how"  title="Column setting" titleAlignment="Center"    contentWidth="40%" >
+<Table id="_IDGenTable1"   mode="MultiSelect" >
+<columns>
+<Column id="_IDGenColumn1" >
+<Text id="_IDGenText1"  text="Field  name" ></Text>
+</Column>
+</columns>
+<items>
+<ColumnListItem id="_IDGenColumnListItem1" 
+>
+<Text id="_IDGenText2"  text="LOCATION_ID" ></Text>
+</ColumnListItem>
+<ColumnListItem id="_IDGenColumnListItem2" 
+>
+<Text id="_IDGenText3"  text="LOCATION_DESC" ></Text>
+</ColumnListItem>
+</items>
+</Table>
+
+<footer>
+<Toolbar id="_IDGenToolbar1" >
+<ToolbarSpacer id="_IDGenToolbarSpacer1" ></ToolbarSpacer>
+<Button id="_IDGenButton1"  type="Accept"  text="Submit"  press="on_hide_select" ></Button>
+
+<Button id="_IDGenButton2"  type="Reject"  text="Close"  press="close_hide" ></Button>
+</Toolbar>
+</footer>
+</Dialog>
+
+
+</core:FragmentDefinition>

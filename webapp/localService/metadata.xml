@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="CatalogService" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="LOCATION_STB" EntityType="CatalogService.LOCATION_STB"/>
+                <EntitySet Name="LOCATION" EntityType="CatalogService.LOCATION"/>
+                <EntitySet Name="LOCATION_IBP" EntityType="CatalogService.LOCATION_IBP"/>
+                <EntitySet Name="SALES_HISTORY" EntityType="CatalogService.SALES_HISTORY"/>
+                <EntitySet Name="SALES" EntityType="CatalogService.SALES"/>
+                <EntitySet Name="PRODUCT" EntityType="CatalogService.PRODUCT"/>
+                <EntitySet Name="DERIVECHAR" EntityType="CatalogService.DERIVECHAR"/>
+                <EntitySet Name="MAT_LTE_MDATA" EntityType="CatalogService.MAT_LTE_MDATA"/>
+                <EntitySet Name="CUSTOMERS" EntityType="CatalogService.CUSTOMERS"/>
+                <EntitySet Name="LOC_PRODID" EntityType="CatalogService.LOC_PRODID"/>
+                <EntitySet Name="PROD_CLASS" EntityType="CatalogService.PROD_CLASS"/>
+                <EntitySet Name="CLASS_C" EntityType="CatalogService.CLASS_C"/>
+                <EntitySet Name="CHARC_DATA" EntityType="CatalogService.CHARC_DATA"/>
+                <EntitySet Name="CHARAC_VALUES" EntityType="CatalogService.CHARAC_VALUES"/>
+                <EntitySet Name="PROD_CONFIG" EntityType="CatalogService.PROD_CONFIG"/>
+                <EntitySet Name="LOC_PROD" EntityType="CatalogService.LOC_PROD"/>
+                <EntitySet Name="BOM_STAG" EntityType="CatalogService.BOM_STAG"/>
+                <EntitySet Name="BOM_OBJ_DEPEN" EntityType="CatalogService.BOM_OBJ_DEPEN"/>
+                <EntitySet Name="ASS_COMP" EntityType="CatalogService.ASS_COMP"/>
+                <EntitySet Name="OBJ_DEPEN_MAS_DATA" EntityType="CatalogService.OBJ_DEPEN_MAS_DATA"/>
+            </EntityContainer>
+            <EntityType Name="LOCATION_STB">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="30"/>
+                <Property Name="LOCATION_TYPE" Type="Edm.String" MaxLength="1"/>
+                <Property Name="RESERVE_FIELD1" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD2" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD3" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD4" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD5" Type="Edm.String" MaxLength="20"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="LOCATION">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="30"/>
+                <Property Name="LOCATION_TYPE" Type="Edm.String" MaxLength="1"/>
+                <Property Name="RESERVE_FIELD1" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD2" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD3" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD4" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD5" Type="Edm.String" MaxLength="20"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="LOCATION_IBP">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="LOCATION_DESC" Type="Edm.String" MaxLength="30"/>
+                <Property Name="LOCATION_TYPE" Type="Edm.String" MaxLength="1"/>
+                <Property Name="RESERVE_FIELD1" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD2" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD3" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD4" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD5" Type="Edm.String" MaxLength="20"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="SALES_HISTORY">
+                <Key>
+                    <PropertyRef Name="SALES_DOCUMENT"/>
+                    <PropertyRef Name="SALES_DOCUMENT_ITEM"/>
+                    <PropertyRef Name="CHARACTERSTIC"/>
+                </Key>
+                <Property Name="SALES_DOCUMENT" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="SALES_DOCUMENT_ITEM" Type="Edm.String" MaxLength="6" Nullable="false"/>
+                <Property Name="CHARACTERSTIC" Type="Edm.String" MaxLength="30" Nullable="false"/>
+                <Property Name="CHARACTERSTIC_VALUE" Type="Edm.String" MaxLength="70"/>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40"/>
+                <Property Name="PROD_AVAILABILITY_DT" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CLASS" Type="Edm.String" MaxLength="18"/>
+                <Property Name="CLASS_NUM" Type="Edm.String" MaxLength="10"/>
+                <Property Name="CHARACTERSTIC_NUM" Type="Edm.String" MaxLength="10"/>
+                <Property Name="VALUE_NUM" Type="Edm.String" MaxLength="15"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="SALES">
+                <Key>
+                    <PropertyRef Name="SALES_DOCUMENT"/>
+                    <PropertyRef Name="SALES_DOCUMENT_ITEM"/>
+                </Key>
+                <Property Name="SALES_DOCUMENT" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="SALES_DOCUMENT_ITEM" Type="Edm.String" MaxLength="6" Nullable="false"/>
+                <Property Name="DOC_CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="SCHEDULE_LINE_NO" Type="Edm.String" MaxLength="4"/>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40"/>
+                <Property Name="REASON_4REJECTION" Type="Edm.String" MaxLength="2"/>
+                <Property Name="UOM" Type="Edm.String" MaxLength="3"/>
+                <Property Name="CONFIRMED_QTY" Type="Edm.String" MaxLength="17"/>
+                <Property Name="QTY_UNITS" Type="Edm.String" MaxLength="17"/>
+                <Property Name="PROD_AVAILABILITY_DT" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="NET_VALUE" Type="Edm.String" MaxLength="21"/>
+                <Property Name="CUSTOMER_GROUP" Type="Edm.String" MaxLength="2"/>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4"/>
+                <Property Name="SALES_ORG" Type="Edm.String" MaxLength="4"/>
+                <Property Name="DISTR_CHANNEL" Type="Edm.String" MaxLength="2"/>
+                <Property Name="DIVISION" Type="Edm.String" MaxLength="2"/>
+                <Property Name="SAL_DOCU_TYPE" Type="Edm.String" MaxLength="4"/>
+                <Property Name="ITEM_CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="ITEM_CHANGE_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="OPEN_ORDER" Type="Edm.String" MaxLength="1"/>
+                <Property Name="CHARG" Type="Edm.String" MaxLength="10"/>
+                <Property Name="IBP_CUSTOMER" Type="Edm.String" MaxLength="10"/>
+                <Property Name="NOT_PLANNING" Type="Edm.String" MaxLength="1"/>
+                <Property Name="ON_HAND_STOCK" Type="Edm.String" MaxLength="1"/>
+                <Property Name="IN_TRANSIT" Type="Edm.String" MaxLength="1"/>
+                <Property Name="SHIP_FROM_LOC" Type="Edm.String" MaxLength="4"/>
+                <Property Name="RESERVE_FIELD1" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD2" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD3" Type="Edm.String" MaxLength="20"/>
+                <Property Name="STOCK_LOC" Type="Edm.String" MaxLength="4"/>
+                <Property Name="TRANS_TO_LOC" Type="Edm.String" MaxLength="4"/>
+                <Property Name="TRANS_FROM_LOC" Type="Edm.String" MaxLength="4"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="PRODUCT">
+                <Key>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                </Key>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="PRODUCT_DESC" Type="Edm.String" MaxLength="40"/>
+                <Property Name="PRODUCT_TYPE" Type="Edm.String" MaxLength="4"/>
+                <Property Name="PRODUCT_FAMILY" Type="Edm.String" MaxLength="40"/>
+                <Property Name="PRODUCT_GROUP" Type="Edm.String" MaxLength="20"/>
+                <Property Name="PRODUCT_MODEL" Type="Edm.String" MaxLength="20"/>
+                <Property Name="PRODUCT_MODEL_RANGE" Type="Edm.String" MaxLength="20"/>
+                <Property Name="PRODUCT_SERIES" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD1" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD2" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD3" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD4" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD5" Type="Edm.String" MaxLength="20"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="DERIVECHAR">
+                <Key>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                    <PropertyRef Name="RECORD_TYPE"/>
+                    <PropertyRef Name="CLAUSE"/>
+                    <PropertyRef Name="DEP_NAME"/>
+                    <PropertyRef Name="CHAR_NUM"/>
+                    <PropertyRef Name="CHARVAL_NUM"/>
+                    <PropertyRef Name="SORT_COUNTER"/>
+                    <PropertyRef Name="CHAR_COUNTER"/>
+                    <PropertyRef Name="INT_CLS_NUMBER"/>
+                </Key>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="RECORD_TYPE" Type="Edm.String" MaxLength="2" Nullable="false"/>
+                <Property Name="CLAUSE" Type="Edm.String" MaxLength="2" Nullable="false"/>
+                <Property Name="DEP_NAME" Type="Edm.String" MaxLength="30" Nullable="false"/>
+                <Property Name="CHAR_NUM" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="CHARVAL_NUM" Type="Edm.String" MaxLength="20" Nullable="false"/>
+                <Property Name="SORT_COUNTER" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="CHAR_COUNTER" Type="Edm.String" MaxLength="5" Nullable="false"/>
+                <Property Name="INT_CLS_NUMBER" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="OD_CONDITION" Type="Edm.String" MaxLength="2"/>
+                <Property Name="RULE_TYPE" Type="Edm.String" MaxLength="30"/>
+                <Property Name="CHANGE_NO" Type="Edm.String" MaxLength="12"/>
+                <Property Name="VALID_FROM" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="VALID_TO" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="MAT_LTE_MDATA">
+                <Key>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                    <PropertyRef Name="LOCATION_ID"/>
+                    <PropertyRef Name="CLASS_NUM"/>
+                    <PropertyRef Name="CHARACTERSTIC_NUM"/>
+                    <PropertyRef Name="VALUE_NUM"/>
+                </Key>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="CLASS_NUM" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="CHARACTERSTIC_NUM" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="VALUE_NUM" Type="Edm.String" MaxLength="15" Nullable="false"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="CUSTOMERS">
+                <Key>
+                    <PropertyRef Name="CUSTOMER_GROUP"/>
+                </Key>
+                <Property Name="CUSTOMER_GROUP" Type="Edm.String" MaxLength="2" Nullable="false"/>
+                <Property Name="CUSTOMER_DESC" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD1" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD2" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD3" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD4" Type="Edm.String" MaxLength="20"/>
+                <Property Name="RESERVE_FIELD5" Type="Edm.String" MaxLength="20"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="LOC_PRODID">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="LOTSIZE_KEY" Type="Edm.String" MaxLength="2"/>
+                <Property Name="PROCUREMENT_TYPE" Type="Edm.String" MaxLength="1"/>
+                <Property Name="LOTSIZE" Type="Edm.String" MaxLength="19"/>
+                <Property Name="PLANNING_STRATEGY" Type="Edm.String" MaxLength="2"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="PROD_CLASS">
+                <Key>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                    <PropertyRef Name="CLASS"/>
+                </Key>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="CLASS" Type="Edm.String" MaxLength="18" Nullable="false"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="CLASS_C">
+                <Key>
+                    <PropertyRef Name="INT_CLS_NUMBER"/>
+                </Key>
+                <Property Name="INT_CLS_NUMBER" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="CLASS_TYPE" Type="Edm.String" MaxLength="3"/>
+                <Property Name="CLASS" Type="Edm.String" MaxLength="18"/>
+                <Property Name="ZDESC" Type="Edm.String" MaxLength="40"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="CHARC_DATA">
+                <Key>
+                    <PropertyRef Name="INT_CLS_NUMBER"/>
+                    <PropertyRef Name="CHAR_NAME"/>
+                </Key>
+                <Property Name="INT_CLS_NUMBER" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="CHAR_NAME" Type="Edm.String" MaxLength="30" Nullable="false"/>
+                <Property Name="INT_CHAR" Type="Edm.String" MaxLength="10"/>
+                <Property Name="CHAR_DESC" Type="Edm.String" MaxLength="50"/>
+                <Property Name="CHAR_GROUP" Type="Edm.String" MaxLength="10"/>
+                <Property Name="CHAR_DATATYPE" Type="Edm.String" MaxLength="4"/>
+                <Property Name="CHAR_CATEGORY" Type="Edm.String" MaxLength="2"/>
+                <Property Name="ENTRY_REQ" Type="Edm.String" MaxLength="1"/>
+                <Property Name="MULTI_CHAR" Type="Edm.String" MaxLength="1"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="CHARAC_VALUES">
+                <Key>
+                    <PropertyRef Name="INT_CHAR"/>
+                </Key>
+                <Property Name="INT_CHAR" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="VALUE_NUM" Type="Edm.String" MaxLength="15"/>
+                <Property Name="CHAR_NAME" Type="Edm.String" MaxLength="30"/>
+                <Property Name="CHARACTERISTIC_VALUE" Type="Edm.String" MaxLength="70"/>
+                <Property Name="CHARACTERISTIC_VDESC" Type="Edm.String" MaxLength="70"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="PROD_CONFIG">
+                <Key>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                    <PropertyRef Name="LOCATION_ID"/>
+                </Key>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="PRODUCT_DESC" Type="Edm.String" MaxLength="40"/>
+                <Property Name="PRODUCT_TYPE" Type="Edm.String" MaxLength="4"/>
+                <Property Name="REF_PRODID" Type="Edm.String" MaxLength="40"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="LOC_PROD">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="LOTSIZE_KEY" Type="Edm.String" MaxLength="2"/>
+                <Property Name="PROCUREMENT_TYPE" Type="Edm.String" MaxLength="1"/>
+                <Property Name="LOTSIZE" Type="Edm.String" MaxLength="19"/>
+                <Property Name="PLANNING_STRATEGY" Type="Edm.String" MaxLength="2"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="BOM_STAG">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                    <PropertyRef Name="ITEM_NUM"/>
+                    <PropertyRef Name="COMPONENT"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="ITEM_NUM" Type="Edm.String" MaxLength="6" Nullable="false"/>
+                <Property Name="COMPONENT" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="COMP_TYPE" Type="Edm.String" MaxLength="4"/>
+                <Property Name="PROD_DESC" Type="Edm.String" MaxLength="40"/>
+                <Property Name="COMPONENT_QTY" Type="Edm.String" MaxLength="18"/>
+                <Property Name="VALID_FROM" Type="Edm.String" MaxLength="8"/>
+                <Property Name="VALID_TO" Type="Edm.String" MaxLength="8"/>
+                <Property Name="CRITICAL_ASS" Type="Edm.String" MaxLength="1"/>
+                <Property Name="CHANGE_NO" Type="Edm.String" MaxLength="12"/>
+                <Property Name="DELETE_FLAG" Type="Edm.String" MaxLength="1"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="BOM_OBJ_DEPEN">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                    <PropertyRef Name="PRODUCT_ID"/>
+                    <PropertyRef Name="ITEM_NUM"/>
+                    <PropertyRef Name="COMPONENT"/>
+                    <PropertyRef Name="DEPENDENCY"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="PRODUCT_ID" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="ITEM_NUM" Type="Edm.String" MaxLength="6" Nullable="false"/>
+                <Property Name="COMPONENT" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="DEPENDENCY" Type="Edm.String" MaxLength="30" Nullable="false"/>
+                <Property Name="DEP_DESC" Type="Edm.String" MaxLength="30"/>
+                <Property Name="COMPONENT_QTY" Type="Edm.String" MaxLength="18"/>
+                <Property Name="VALID_FROM" Type="Edm.String" MaxLength="8"/>
+                <Property Name="VALID_TO" Type="Edm.String" MaxLength="8"/>
+                <Property Name="CHANGE_NO" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="ASS_COMP">
+                <Key>
+                    <PropertyRef Name="LOCATION_ID"/>
+                    <PropertyRef Name="ASSEMBLY"/>
+                    <PropertyRef Name="SUB_COMP"/>
+                </Key>
+                <Property Name="LOCATION_ID" Type="Edm.String" MaxLength="4" Nullable="false"/>
+                <Property Name="ASSEMBLY" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="SUB_COMP" Type="Edm.String" MaxLength="40" Nullable="false"/>
+                <Property Name="COMP_TYPE" Type="Edm.String" MaxLength="4"/>
+                <Property Name="PROD_DESC" Type="Edm.String" MaxLength="40"/>
+                <Property Name="COMPONENT_QTY" Type="Edm.String" MaxLength="18"/>
+                <Property Name="VALID_FROM" Type="Edm.String" MaxLength="8"/>
+                <Property Name="VALID_TO" Type="Edm.String" MaxLength="8"/>
+                <Property Name="CRITICAL_COMP" Type="Edm.String" MaxLength="1"/>
+                <Property Name="CHANGE_NO" Type="Edm.String" MaxLength="12"/>
+                <Property Name="DELETE_FLAG" Type="Edm.String" MaxLength="1"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+            <EntityType Name="OBJ_DEPEN_MAS_DATA">
+                <Key>
+                    <PropertyRef Name="OBJ_DEP"/>
+                    <PropertyRef Name="OBJ_COUNTER"/>
+                    <PropertyRef Name="CLASS_NUM"/>
+                    <PropertyRef Name="CHAR_NUM"/>
+                    <PropertyRef Name="CHAR_COUNTER"/>
+                    <PropertyRef Name="CHARVAL_NUM"/>
+                </Key>
+                <Property Name="OBJ_DEP" Type="Edm.String" MaxLength="30" Nullable="false"/>
+                <Property Name="OBJ_COUNTER" Type="Edm.String" MaxLength="5" Nullable="false"/>
+                <Property Name="CLASS_NUM" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="CHAR_NUM" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="CHAR_COUNTER" Type="Edm.String" MaxLength="5" Nullable="false"/>
+                <Property Name="CHARVAL_NUM" Type="Edm.String" MaxLength="15" Nullable="false"/>
+                <Property Name="OD_CONDITION" Type="Edm.String" MaxLength="2"/>
+                <Property Name="ROW_ID" Type="Edm.String" MaxLength="5"/>
+                <Property Name="CHANGED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CHANGED_TIME" Type="Edm.Time"/>
+                <Property Name="CHANGED_BY" Type="Edm.String" MaxLength="12"/>
+                <Property Name="CREATED_DATE" Type="Edm.DateTime" sap:display-format="Date"/>
+                <Property Name="CREATED_TIME" Type="Edm.Time"/>
+                <Property Name="CREATED_BY" Type="Edm.String" MaxLength="12"/>
+            </EntityType>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
