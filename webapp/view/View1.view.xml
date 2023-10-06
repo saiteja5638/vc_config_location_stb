@@ -13,6 +13,9 @@
         </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
        <uxap:headerContent>
+            <FlexBox id="_IDGenFlexBox1" >
+            <SearchField id="_IDGenSearchField1"  width="25%" ></SearchField>
+            </FlexBox>
        </uxap:headerContent>
        <uxap:ObjectPageSection id="_IDGenObjectPageSection1" >
        <uxap:ObjectPageSubSection id="_IDGenObjectPageSubSection2" >
