@@ -13,8 +13,13 @@
         </uxap:ObjectPageDynamicHeaderTitle>
         </uxap:headerTitle>
        <uxap:headerContent>
-            <FlexBox id="_IDGenFlexBox1" >
+            
+            <FlexBox id="_IDGenFlexBox1"  wrap="Wrap" justifyContent="SpaceBetween">
             <SearchField id="_IDGenSearchField1"   ></SearchField>
+             <SearchField id="_IDGenSearchFiel1"   ></SearchField>
+              <SearchField id="_IDGenSearchFld1"   ></SearchField>
+               <SearchField id="_IDGenSearcField1"   ></SearchField>
+                <SearchField id="_IDGenSeachField1"   ></SearchField>
             </FlexBox>
        </uxap:headerContent>
        <uxap:ObjectPageSection id="_IDGenObjectPageSection1" >
